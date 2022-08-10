@@ -63,20 +63,8 @@ Amber::Server.configure do |settings|
   # PORT: This is the port that you're application will run on. Examples would be (80, 443, 3000, 8080)
   #
   settings.port = ENV["PORT"].to_i if ENV["PORT"]?
-  #
-  #
-  # Redis URL: Redis is an in memory key value storage. Amber utilizes redis as
-  # a storing option for session information.
-  #
-  # settings.redis_url = ENV["REDIS_URL"] if ENV["REDIS_URL"]?
-  #
-  #
-  # Database URL: This is the database connection string or data file url.
-  # The connection string contains the information to establish a connection to the
-  # database or the data file. Defaults to the database provider you chose at
-  # at app generation.
-  #
-  # settings.database_url = ENV["DATABASE_URL"] if ENV["DATABASE_URL"]?
+  settings.redis_url = ENV["REDIS_URL"] if ENV["REDIS_URL"]?
+  settings.database_url = ENV["DATABASE_URL"] if ENV["DATABASE_URL"]?
   #
   #
   # SSL Key File: The private key is a text file used initially to generate a

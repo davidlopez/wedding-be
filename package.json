@@ -11,6 +11,10 @@
     "release": "webpack --mode production --config config/webpack/production.js",
     "test": "echo \"No test specified\" && exit 1"
   },
+  "engines": {
+    "npm": "<8.0.0",
+    "node": "<16.0.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.14.0",
     "@babel/preset-env": "^7.14.0",
@@ -25,7 +29,6 @@
     "webpack": "^5.36.2",
     "webpack-cli": "^4.6.0",
     "webpack-merge": "^5.7.3"
-
   },
   "dependencies": {
     "bootstrap": "^4.2.1",
